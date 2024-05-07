@@ -1,70 +1,53 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
-    
+    min-height: 100vh;
     background-color: teal;
-
-}
-html{
-    font-family: 'Gill Sans';
-    font-size: 20px;
-}
-.Contenedor{
-   
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 15px;
 }
-.calculadorsita{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 2px;
-
-   
-
+.Calculadorsita{
+    background-color: rgb(36, 34, 174);
+    box-shadow: 10px 11px 10px rgb(1, 1, 1);
+    color: rgb(21, 234, 205);
+    max-width: 100%;
+    padding: 1.3rem;
+    height: 300px;
+    width: 250px;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.6rem;
+    
 
 }
-
 .display{
-    padding:25px 15px;
-    width: 100%;
+    grid-column: 1/5;
+    background-color: rgb(60, 11, 35);
+    border-radius: 0.2rem;
+    padding: 1.2rem;
     text-align: right;
-    overflow-x: auto;
-    border: 1px solid gray;
-
+    font-size: 1.5rem;
+    margin-bottom:0.5rem;
+    font-weight: 800;
+    font-family: monospace;
 }
-
-.teclado{
-    display: flex;
-    width: 100%;
-   
-
-}
-.tecladonumeros{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.tecladumun{
-    width:25%;
-    padding: 15px;
-    text-align: center;
+.btn{
+    background-color: rgba(21, 179, 227, 0.668);
+    color: rgb(236, 245, 235);
+    border-radius: 1rem;
     cursor: pointer;
-    background-color: rgb(255, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
 }
-.tecladumun:hover{
-    filter:brightness(80%);
+.btn:hover{
+    filter: brightness(60%);
     transition: filter .25s;
 }
-.tecladumun.Verde{
-background-color: rgb(143, 195, 232);
+.escribir2{
+    width:  13rem;
+    grid-column: 5/1;
 }
