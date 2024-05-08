@@ -47,7 +47,3 @@ body{
     filter: brightness(60%);
     transition: filter .25s;
 }
-.escribir2{
-    width:  13rem;
-    grid-column: 5/1;
-}
