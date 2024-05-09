@@ -12,8 +12,9 @@ body{
     align-items: center;
 }
 .Calculadorsita{
-    background-color: rgb(36, 34, 174);
-    box-shadow: 10px 11px 10px rgb(1, 1, 1);
+    background-color: rgb(4, 3, 67);
+
+    box-shadow: 10px 11px 10px rgb(5, 58, 94);
     color: rgb(21, 234, 205);
     max-width: 100%;
     padding: 1.3rem;
