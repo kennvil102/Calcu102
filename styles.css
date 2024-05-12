@@ -98,7 +98,8 @@ body{
 
 }
 #resultad1{
-    background-color: red;
+    background-color: rgb(172, 5, 5);
     width: 100px;
     border-radius: 1rem;
+    color: rgb(238, 255, 1);
 }
