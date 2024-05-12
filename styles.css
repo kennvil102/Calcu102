@@ -6,16 +6,19 @@
 }
 body{
     min-height: 100vh;
-    background-color: teal;
+    background-color: rgb(25, 29, 29);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .Calculadorsita{
-    background-color: rgb(4, 3, 67);
-
-    box-shadow: 10px 11px 10px rgb(5, 58, 94);
-    color: rgb(21, 234, 205);
+    background-color: rgb(8, 8, 17);
+    background-image: url();
+    background-size: 35rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    box-shadow: 10px 11px 10px rgb(104, 5, 5);
+    color: rgb(223, 219, 34);
     max-width: 100%;
     padding: 1.3rem;
     height: 300px;
@@ -30,6 +33,10 @@ body{
 .display{
     grid-column: 1/5;
     background-color: rgb(60, 11, 35);
+    background-image: url(https://motionbgs.com/dl/gif/3143);
+    background-size: 13rem;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 0.2rem;
     padding: 1.2rem;
     text-align: right;
@@ -39,7 +46,7 @@ body{
     font-family: monospace;
 }
 .btn{
-    background-color: rgba(21, 179, 227, 0.668);
+    background-color: rgba(19, 24, 26, 0.668);
     color: rgb(236, 245, 235);
     border-radius: 1rem;
     cursor: pointer;
@@ -47,4 +54,51 @@ body{
 .btn:hover{
     filter: brightness(60%);
     transition: filter .25s;
+}
+.CalcuTips{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    border-radius: 1.2rem;
+    width: 19rem;
+    height: 22rem;
+    background-color: rgb(8, 8, 17);
+    background-image: url(https://www.icegif.com/wp-content/uploads/2022/11/icegif-1001.gif);
+    background-size: 23rem;
+    box-shadow: 10px 11px 10px rgb(104, 5, 5);
+    position: absolute;
+    left: 300px;
+}
+
+#boton{
+    border-radius: 0.5rem;
+    border: solid #38120f;
+    font-family: monospace;
+    cursor: pointer;
+}
+#boton:hover{
+    filter: brightness(60%);
+    transition: fill .25s;
+}
+#caja1{
+    background-color: rgb(145, 4, 4);
+    border-radius: 1rem;
+    color: rgb(238, 255, 1);
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+     
+}
+#caja2{
+    background-color: rgb(145, 4, 4);
+    border-radius: 1rem;
+    color: rgb(238, 255, 1);
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+
+}
+#resultad1{
+    background-color: red;
+    width: 100px;
+    border-radius: 1rem;
 }

@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadorsita</title>
-</head>
-<body>
-
+</head>  
 <div class="Calculadorsita">
     <div  class="display"></div>
     <button id="C" class="btn">C</button>
@@ -29,6 +27,24 @@
     <button id="cero"class="btn">0</button>
     <button class="btn">.</button>
 </div>
+<div class="CalcuTips">
+    <br>
+    <h3>CalcuTips</h3>
+    <br><br>
+    <h3>Total  Cuenta en colones ₡</h3>
+    <br>
+    <input type="text" id="caja1">
+    <br><br>
+    <H3>Porcentaje de Propina %</H3>
+    <br>
+    <input type="text" id="caja2">
+    <br><br>
+    <button type="button" id="boton" onclick="Calcular()">Calcular</button>
+    <br><br>
+    <h3>Total de la Propina</h3>
+    <br>
+    <span id="resultad1"></span>
+
     <script src="funcionesCalcu.js"></script>
 </body>
 </html>
