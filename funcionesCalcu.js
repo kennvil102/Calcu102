@@ -1,23 +1,28 @@
-//Primeros creamos las variables pantalla y botonsito
+//Primeros creamos las variables  y obtenemos los elementos  pantalla y botonsito
 
 /*Queryselector selecciona al primer elemento del dom que tiene la clase .display
 QuerySelectorAll selecciona a todos los elementos del dom con la clase .btn */  
 let pantalla=document.querySelector(".display")
 let botonsito=document.querySelectorAll(".btn")
 
-/* Botonsito tiene todos los botones le aplicamos el metodo foreach
-para aplicar la funcion a cada boton (foreach "cada uno") luego lo siguiente es aplicar 
-un listener a boton que contiene todos los botones hacemos otra funcion para que el boton al dar click extraiga el texto con textcontent */
+/* La variable Botonsito contiene todos  los botones, le aplicamos el metodo foreach
+para que a cada boton  se le agregue el evento click y con textconte que al darle click
+al boton extraiga el contenido de dicho boton*/
 botonsito.forEach(boton=> {
 boton.addEventListener('click', ()=>{
 let botonApretado = boton.textContent;
-/*Hacemos una validacion si al apretar el (boton.id) y este es igual a c
-el contenido de la pantalla va ser igual a cero*/
+/*Hacemos una validacion si presionamos el boton C el contenido 
+de la pantalla va ser 0*/
 if (boton.id === "C") {
-    pantalla.textContent ="0"; 
-    return;   
+    pantalla.textContent ="0";
+    return; 
 }
-
+/* si presionamos el boton delet  la flechita <--
+se hace lo siguiente , si el contenido de la pantalla contiene 1 caracter
+se va volver cero, si no con el metodo slice va extraer o cortar parte
+de la cadena de caracteres desde el indice (0,-1) con el menos recorta de atras
+hacia delante
+*/
 if (boton.id ==="delet") {
     if (pantalla.textContent.length===1) {
         pantalla.textContent="0";
@@ -29,12 +34,18 @@ if (boton.id ==="delet") {
 return;
     
 }
-
+/*Si presionamos el boton igual,
+al contenido de la pantalla le aplicamos eval que convierte una cadena texto 
+y la convierte en una expresion matematica ej "8+8=16" */
 if (boton.id ==="igual") {
     pantalla.textContent=eval(pantalla.textContent)
     return;
     
 }
+/*si el contenido de pantalla es igual a cero 
+el contenido de pantalla sera remplazado por el boton que sea presionado
+y si no es iguall cero ej es 8 con el += se le agregar otro valor o contenido
+al ser presionado el boton*/
 if (pantalla.textContent === "0"){
 pantalla.textContent= botonApretado;
 
@@ -63,6 +74,9 @@ function Calcular() {
     let porcentaje = porcentajePropina / 100;
     let resultado1 = totalDeCompra * porcentaje;
 
+     /*llamamos al elemento con el id resultado aplicamos
+     innerhtml para modificar el contenido del elemento
+     y pueda mostrar el valor del resultado1 */
     document.getElementById('resultad1').innerHTML = resultado1
     }
 
