@@ -6,13 +6,15 @@
 }
 body{
     min-height: 100vh;
-    background-color: rgb(25, 29, 29);
-    display: flex;
+    background-image: url(img/itachi-uchiha-4k-6s.jpg);
+    background-size: 110%;
     justify-content: center;
     align-items: center;
 }
 /* */ 
 .Calculadorsita{
+    top: 250px;
+    margin-left: 100px;
     background-color: rgb(8, 8, 17);
     background-image: url();
     background-size: 35rem;
@@ -28,7 +30,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 0.6rem;
-    
+    position: absolute;
+    left: 1000px;
 
 }
 .display{
@@ -48,6 +51,10 @@ body{
 }
 .btn{
     background-color: rgba(19, 24, 26, 0.668);
+    background-image: url();
+    background-repeat:  ;
+    background-size: 5%;
+    background-position: center;
     color: rgb(236, 245, 235);
     border-radius: 1rem;
     cursor: pointer;
@@ -57,6 +64,8 @@ body{
     transition: filter .25s;
 }
 .CalcuTips{
+    top: 240px;
+    margin-left: -100px;
     text-align: center;
     color:rgb(255, 255, 255);
     border-radius: 1.2rem;
@@ -104,4 +113,5 @@ body{
     width: 100px;
     color: rgb(238, 255, 1);
     font-family: monospace;
+ 
 }

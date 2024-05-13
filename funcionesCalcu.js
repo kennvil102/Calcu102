@@ -6,7 +6,7 @@ let pantalla=document.querySelector(".display")
 let botonsito=document.querySelectorAll(".btn")
 
 /* La variable Botonsito contiene todos  los botones, le aplicamos el metodo foreach
-para que a cada boton  se le agregue el evento click y con textconte que al darle click
+para que a cada boton  se le agregue el evento click y con textconten que al darle click
 al boton extraiga el contenido de dicho boton*/
 botonsito.forEach(boton=> {
 boton.addEventListener('click', ()=>{
@@ -18,7 +18,7 @@ if (boton.id === "C") {
     return; 
 }
 /* si presionamos el boton delet  la flechita <--
-se hace lo siguiente , si el contenido de la pantalla contiene 1 caracter
+y el contenido de la pantalla contiene 1 caracter
 se va volver cero, si no con el metodo slice va extraer o cortar parte
 de la cadena de caracteres desde el indice (0,-1) con el menos recorta de atras
 hacia adelante
