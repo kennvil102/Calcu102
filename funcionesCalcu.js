@@ -21,7 +21,7 @@ if (boton.id === "C") {
 se hace lo siguiente , si el contenido de la pantalla contiene 1 caracter
 se va volver cero, si no con el metodo slice va extraer o cortar parte
 de la cadena de caracteres desde el indice (0,-1) con el menos recorta de atras
-hacia delante
+hacia adelante
 */
 if (boton.id ==="delet") {
     if (pantalla.textContent.length===1) {
