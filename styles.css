@@ -16,10 +16,6 @@ body{
     top: 250px;
     margin-left: 100px;
     background-color: rgb(8, 8, 17);
-    background-image: url();
-    background-size: 35rem;
-    background-repeat: no-repeat;
-    background-position-x: center;
     box-shadow: 10px 11px 10px rgb(104, 5, 5);
     color: rgb(223, 219, 34);
     max-width: 100%;
@@ -70,7 +66,7 @@ body{
     color:rgb(255, 255, 255);
     border-radius: 1.2rem;
     width: 19rem;
-    height: 22rem;
+    height: 22.5rem;
     background-color: rgb(8, 8, 17);
     background-image: url(https://www.icegif.com/wp-content/uploads/2022/11/icegif-1001.gif);
     background-size: 23rem;
@@ -109,9 +105,12 @@ body{
 }
 #resultad1{
     background-color: rgb(172, 5, 5);
-    border-radius: 1rem;
-    width: 100px;
+    border-radius: 0.5rem;
+    width: 300px;
     color: rgb(238, 255, 1);
     font-family: monospace;
+    font-size: 12px;
+    position: absolute;
+    left: 4px;
  
 }
