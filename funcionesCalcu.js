@@ -77,7 +77,7 @@ function Calcular() {
      /*llamamos al elemento con el id resultado aplicamos
      innerhtml para modificar el contenido del elemento
      y pueda mostrar el valor del resultado1 */
-    document.getElementById('resultad1').innerHTML = " El porcentaje es " + porcentaje +  " % " + " La cuenta es ₡" + totalDeCompra + " y el total con la propina incluida es ₡" + resultado1
+    document.getElementById('resultad1').innerHTML = " El total de la cuenta es ₡" + totalDeCompra  + " el porcentaje de propina es " + porcentajePropina + " % " + " y el total con la propina incluida es ₡" + resultado1
     }
 
     
